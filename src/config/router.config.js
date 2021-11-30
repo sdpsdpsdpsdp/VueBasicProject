@@ -11,6 +11,7 @@ export const asyncRouterMap = [
     component: TabLayout,
     meta: { title: '首页' },
     redirect: '/system/sysrolelist',
+    // redirect: '/user/Login',
     children: []
   },
 

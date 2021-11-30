@@ -11,6 +11,7 @@ let router = new Router({
   routes: constantRouterMap,
 })
 router.$addRoutes = (params) => {
+  console.log("params",params)
   router.matcher = new Router({mode: 'history'}).matcher;
   router.addRoutes(params)
 }
