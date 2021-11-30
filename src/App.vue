@@ -1,17 +1,55 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <a-config-provider :local='locale'>
+    <div id='app'>
+      <router-view v-if='isRouterAlive'/>
+    </div>
+  </a-config-provider>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import enquireScreen from "@/utils/device"
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  provide() {
+    return {
+      reload: this.reload
+    }
+  },
+  data() {
+    return {
+      isRouterAlive: true
+    }
+  },
+  computed: {
+    locale() {
+      return this.$store.getters.local
+    }
+  },
+  created() {
+    let that = this
+    enquireScreen(deviceType => {
+      // tablet
+      if (deviceType === 0) {
+        that.$store.commit("TOGGLE_DEVICE", "mobile")
+        that.$store.dispatch("setSidebar", false)
+      }
+      // mobile
+      else if (deviceType === 1) {
+        that.$store.commit("TOGGLE_DEVICE", "mobile")
+        that.$store.dispatch("setSidebar", false)
+      } else {
+        that.$store.commit("TOGGLE_DEVICE", "desktop")
+        that.$store.dispatch("setSidebar", true)
+      }
+    })
+  },
+  methods: {
+    reload() {
+      this.isRouterAlive = false
+      this.$nextTick(function () {
+        this.isRouterAlive = true
+      })
+    }
   }
 }
 </script>

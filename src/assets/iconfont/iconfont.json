@@ -1,0 +1,79 @@
+{
+  "id": "2668038",
+  "name": "LapisB",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "新版本lapis",
+  "glyphs": [
+    {
+      "icon_id": "23140030",
+      "name": "Signal-1",
+      "font_class": "Signal-1",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "23140031",
+      "name": "Signal-4",
+      "font_class": "Signal-4",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "23140032",
+      "name": "Signal-3",
+      "font_class": "Signal-3",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "23140033",
+      "name": "Signal-2",
+      "font_class": "Signal-2",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "6807941",
+      "name": "Signal-1",
+      "font_class": "Signal-11",
+      "unicode": "ecf9",
+      "unicode_decimal": 60665
+    },
+    {
+      "icon_id": "6807942",
+      "name": "Signal-4",
+      "font_class": "Signal-44",
+      "unicode": "ecfa",
+      "unicode_decimal": 60666
+    },
+    {
+      "icon_id": "6807945",
+      "name": "Signal-5",
+      "font_class": "Signal-55",
+      "unicode": "ecfb",
+      "unicode_decimal": 60667
+    },
+    {
+      "icon_id": "6807959",
+      "name": "Signal-0",
+      "font_class": "Signal-0",
+      "unicode": "ed02",
+      "unicode_decimal": 60674
+    },
+    {
+      "icon_id": "6807960",
+      "name": "Signal-2",
+      "font_class": "Signal-22",
+      "unicode": "ed03",
+      "unicode_decimal": 60675
+    },
+    {
+      "icon_id": "6807961",
+      "name": "Signal-3",
+      "font_class": "Signal-33",
+      "unicode": "ed04",
+      "unicode_decimal": 60676
+    }
+  ]
+}
